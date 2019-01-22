@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<head>
+	<title>游戏工具--梦工厂</title>
+  <script type="text/javascript" src="/jquery/jquery.js"></script>
+	<script type="text/javascript">
+    // 点击按钮
+	  function onClick(pId){
+	    window.location.href = "?id="+pId;
+	  }
+
+	</script>
+	</head>
+  <body>
+    <h1>游戏工具</h1>
+
+   	<button onclick="onClick(1)">更新配置文件</button>
+
+   	<br>
+   	<p id="text"><%= text %></p>
+  </body>
+</html>
