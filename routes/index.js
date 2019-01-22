@@ -23,9 +23,9 @@ router.get('/', function(req, res, next) {
 	console.log("点击ID：",id)
 	if(id==1){
 		//svn更新
-		var scriptPath = process.cwd()+ "/routes/svn.py"
-		var cmd = scriptPath+" "+config.configSvn+" 2"
-		execPy(cmd)
+		var scriptPath = process.cwd()+ "/routes/svnupdate.sh"
+		var cmd = scriptPath+" "+config.configSvn
+		execShell(cmd)
 	}
 	else if(id==2){
 		// 热更新
